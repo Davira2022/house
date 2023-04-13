@@ -1,0 +1,1312 @@
+@mixin container() {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: Neumann;
+  src: url("/fonts/td-neumann.otf");
+}
+
+@font-face {
+  font-family: MyriadproRegular;
+  src: url("/fonts/MYRIADPRO-REGULAR.OTF");
+}
+
+@font-face {
+  font-family: museosanscyrl100;
+  src: url("/fonts/museosanscyrl-100.eot");
+  src: url("/fonts/museosanscyrl-100.ttf");
+  src: url("/fonts/museosanscyrl-100.woff");
+  src: url("/fonts/museosanscyrl-100.woff2")
+}
+
+@font-face {
+  font-family: museosanscyrl300;
+  src: url("/fonts/museosanscyrl-300.eot");
+  src: url("/fonts/museosanscyrl-300.ttf");
+  src: url("/fonts/museosanscyrl-300.woff");
+  src: url("/fonts/museosanscyrl-300.woff2")
+}
+
+@font-face {
+  font-family: museosanscyrl500;
+  src: url("/fonts/museosanscyrl-500.eot");
+  src: url("/fonts/museosanscyrl-500.ttf");
+  src: url("/fonts/museosanscyrl-500.woff");
+  src: url("/fonts/museosanscyrl-500.woff2")
+}
+
+@font-face {
+  font-family: museosanscyrl700;
+  src: url("/fonts/museosanscyrl-700.eot");
+  src: url("/fonts/museosanscyrl-700.ttf");
+  src: url("/fonts/museosanscyrl-700.woff");
+  src: url("/fonts/museosanscyrl-700.woff2")
+}
+
+@mixin button() {
+  background-image: -moz-linear-gradient(0deg, rgb(252, 195, 114) 0%, rgb(240, 219, 188) 100%);
+  background-image: -webkit-linear-gradient(0deg, rgb(252, 195, 114) 0%, rgb(240, 219, 188) 100%);
+  background-image: -ms-linear-gradient(0deg, rgb(252, 195, 114) 0%, rgb(240, 219, 188) 100%);
+  color: rgb(37, 37, 45);
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: museosanscyrl700, sans-serif;
+  border-radius: 30px;
+  border: none;
+  box-sizing: border-box;
+}
+
+@mixin input() {
+  border-radius: 30px;
+  background-color: transparent;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  padding: 19px 0 19px 29px;
+  outline: none;
+  font-size: 18px;
+  font-family: museosanscyrl300, sans-serif;
+  box-sizing: border-box;
+}
+
+@mixin pdf() {
+  background-color: transparent;
+  border: 1px rgb(255, 255, 255) solid;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: museosanscyrl700, sans-serif;
+  border-radius: 30px;
+}
+
+@mixin arrow-title() {
+  font-size: 18px;
+  font-family: museosanscyrl500, sans-serif;
+  color: rgb(255, 255, 255);
+  margin-bottom: 13px;
+}
+
+@mixin arrow-text() {
+  font-size: 16px;
+  font-family: MyriadproRegular, sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1.313;
+  width: 265px;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(37, 37, 45);
+}
+
+.first {
+  background-image: url("/images/back.png");
+  background-size: cover;
+  background-position: top;
+  //height: 811px;
+  padding-bottom: 382px;
+
+  header {
+    //height: 101px;
+    border-bottom: rgb(54, 61, 81) 1px solid;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include container;
+
+      .burger {
+        cursor: pointer;
+        width: 300px;
+      }
+
+      .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+
+        .house {
+          width: 34px;
+          height: 39px;
+        }
+
+        h4 {
+          font-size: 18px;
+          font-family: Neumann, sans-serif;
+          color: rgb(255, 255, 255);
+        }
+      }
+
+      .phone {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        p {
+          margin-top: 15px;
+          font-size: 18px;
+          font-family: museosanscyrl700, sans-serif;
+          color: rgb(255, 255, 255);
+        }
+      }
+
+      .menu {
+        display: none;
+        position: fixed;
+        width: 611px;
+        height: 970px;
+        margin: 0;
+        top: 0;
+        left: 0;
+        z-index: 435;
+        background-color: rgb(37, 37, 45);
+
+        .container-menu {
+          min-width: 252px;
+          position: absolute;
+          top: 0;
+          right: 0;
+
+          .close {
+            display: block;
+            width: 30px;
+            height: 30px;
+            fill: white;
+            margin-top: 35px;
+            cursor: pointer;
+          }
+
+          h2 {
+            margin-top: 59px;
+            font-size: 40px;
+            font-family: Neumann, sans-serif;
+            color: rgb(255, 255, 255);
+          }
+
+          ul {
+            display: flex;
+            list-style: none;
+            flex-direction: column;
+            padding: 61px 0;
+
+            li {
+              padding-bottom: 28px;
+
+              &:hover {
+                list-style: disc inside;
+                color: rgb(236, 198, 107);
+
+              }
+
+              &:hover a {
+                color: rgb(236, 198, 107);
+              }
+
+              a {
+                font-size: 18px;
+                font-family: museosanscyrl300, sans-serif;
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                cursor: pointer;
+              }
+            }
+          }
+
+          .icons {
+            display: flex;
+
+            img {
+              margin-right: 30px;
+            }
+          }
+
+          .phone-small {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  section {
+    padding-top: 162px;
+
+    .container {
+      @include container;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      h1 {
+        font-size: 50px;
+        font-family: Neumann, sans-serif;
+        color: rgb(236, 198, 107);
+        line-height: 1.2;
+        text-align: center;
+        max-width: 634px;
+        margin-bottom: 24px;
+      }
+
+      h3 {
+        font-size: 18px;
+        font-family: museosanscyrl700, sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        max-width: 479px;
+        margin-bottom: 41px;
+      }
+
+      button {
+        @include button;
+        padding: 20px 0;
+        width: 300px;
+      }
+
+      .icons {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 48px;
+        right: 0;
+
+        img {
+          margin: 15px 0;
+        }
+      }
+
+      .arrow {
+        position: absolute;
+        left: 0;
+        top: 237px;
+        @-webkit-keyframes arrow {
+          0% {
+            top: 237px;
+          }
+
+          50% {
+            top: 300px;
+          }
+
+          100% {
+            top: 237px;
+          }
+        }
+
+        &:hover {
+          -webkit-animation: arrow 2s ease;
+          animation: arrow 2s ease;
+          -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+        }
+      }
+    }
+  }
+}
+
+.projects {
+  margin: 0 0 127px 0;
+
+  .container {
+    @include container;
+
+    h2 {
+      font-size: 40px;
+      font-family: Neumann, sans-serif;
+      color: rgb(236, 198, 107);
+      line-height: 1.5;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .project {
+      display: flex;
+      justify-content: space-between;
+      padding: 66px 0;
+
+      .carousel {
+        max-width: 588px;
+
+        .smallImages {
+          margin-top: 25px;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
+      .project-text {
+        max-width: 486px;
+
+        h3 {
+          font-size: 30px;
+          font-family: museosanscyrl500, sans-serif;
+          color: rgb(255, 255, 255);
+          text-align: left;
+          margin-bottom: 46px;
+        }
+
+        p {
+          font-size: 18px;
+          font-family: MyriadproRegular, sans-serif;
+          color: rgb(255, 255, 255);
+          text-align: left;
+        }
+
+        .circles {
+          display: flex;
+          justify-content: space-between;
+          margin: 50px 0;
+        }
+
+        .consult {
+          @include button;
+          width: 365px;
+          padding: 18px 0;
+        }
+
+        div {
+
+          a.pdf {
+            @include pdf;
+            display: inline-block;
+            width: 363px;
+            padding: 18px 0;
+          }
+        }
+      }
+    }
+
+    .next {
+      text-align: center;
+
+      a {
+        font-size: 18px;
+        font-family: museosanscyrl500, sans-serif;
+        color: rgb(137, 137, 138);
+        text-decoration: none;
+        margin-right: 10px;
+      }
+    }
+
+    .project.more {
+      display: none;
+    }
+  }
+}
+
+.technologies {
+  .container {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    h2 {
+      font-size: 40px;
+      font-family: Neumann, sans-serif;
+      color: rgb(236, 198, 107);
+      margin-bottom: 85px;
+    }
+
+    img {
+      margin-bottom: 104px;
+    }
+
+    .arrow-one {
+
+      .big {
+        position: absolute;
+        top: 218px;
+        left: 231px;
+      }
+
+      .small {
+        display: none;
+      }
+
+      .arrow-text {
+        position: absolute;
+        top: 233px;
+        left: 13px;
+
+        h4 {
+          @include arrow-title;
+        }
+
+        p {
+          @include arrow-text;
+        }
+      }
+    }
+
+    .arrow-two {
+      .big {
+        position: absolute;
+        top: 429px;
+        left: 280px;
+      }
+
+      .small {
+        display: none;
+      }
+
+      .arrow-text {
+        position: absolute;
+        top: 474px;
+        left: 51px;
+
+        h4 {
+          @include arrow-title;
+        }
+
+        p {
+          @include arrow-text;
+        }
+      }
+    }
+
+    .arrow-three {
+      .big {
+        position: absolute;
+        top: 593px;
+        left: 499px;
+      }
+
+      .small {
+        display: none;
+      }
+
+      .arrow-text {
+        position: absolute;
+        top: 636px;
+        left: 647px;
+
+        h4 {
+          @include arrow-title;
+        }
+
+        p {
+          @include arrow-text;
+        }
+      }
+    }
+
+    .arrow-four {
+      .big {
+        position: absolute;
+        bottom: 302px;
+        right: 286px;
+      }
+
+      .small {
+        display: none;
+      }
+
+      .arrow-text {
+        position: absolute;
+        bottom: 218px;
+        right: 8px;
+
+        h4 {
+          @include arrow-title;
+        }
+
+        p {
+          @include arrow-text;
+        }
+      }
+    }
+
+    .arrow-five {
+      .big {
+        position: absolute;
+        top: 259px;
+        right: 263px;
+      }
+
+      .small {
+        display: none;
+      }
+
+      .arrow-text {
+        position: absolute;
+        top: 263px;
+        right: -16px;
+
+        h4 {
+          @include arrow-title;
+        }
+
+        p {
+          @include arrow-text;
+        }
+      }
+    }
+
+    .square {
+      display: none;
+    }
+  }
+}
+
+.steps {
+  margin-bottom: 20px;
+
+  .container {
+    @include container;
+
+    h2 {
+      font-size: 40px;
+      font-family: Neumann, sans-serif;
+      color: rgb(236, 198, 107);
+      text-align: center;
+      padding: 120px 0;
+    }
+
+    .six-steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-left: 100px;
+
+      .step {
+        width: 306px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 100px;
+        padding-left: 10px;
+
+        h3 {
+          font-size: 70px;
+          font-family: Neumann, sans-serif;
+          color: rgb(57, 57, 67);
+          text-align: left;
+          position: absolute;
+          left: -6px;
+          top: -69px;
+          z-index: -90;
+        }
+
+        .icon {
+          margin-right: 8px;
+          z-index: 55;
+        }
+
+        .text {
+
+          h4 {
+            font-size: 18px;
+            font-family: museosanscyrl500, sans-serif;
+            color: rgb(255, 255, 255);
+            margin-bottom: 14px;
+          }
+
+          p {
+            font-size: 18px;
+            font-family: MyriadproRegular, sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 1.278;
+
+            span {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.history {
+  margin-bottom: 120px;
+  height: 720px;
+
+  .container {
+    @include container;
+    height: 720px;
+
+    h2 {
+      font-size: 40px;
+      font-family: Neumann, sans-serif;
+      color: rgb(236, 198, 107);
+      text-align: center;
+      margin-bottom: 95px;
+    }
+
+    .center {
+      margin: 0 auto;
+      height: 500px;
+
+      .photo {
+        height: 500px;
+      }
+    }
+  }
+}
+
+.slick-slider {
+  max-width: 1044px;
+}
+
+.slick-prev {
+  z-index: 99;
+  left: -77px;
+}
+
+.slick-prev::before {
+  content: url("/images/arrow-left.png");
+}
+
+.slick-next {
+  right: -48px;
+}
+
+.slick-next::before {
+  content: url("/images/arrow-right.png");
+}
+
+.slick-dots {
+  bottom: -47px;
+}
+
+.slick-dots li button {
+  background-image: url("/images/dot.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-dots li.slick-active button:before {
+  background-image: url("/images/dot-active.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-dots li button:before {
+  font-size: 0;
+}
+
+.slick-current img {
+  //height: 405px;
+  //transition: width 10ms;
+  //width: 610px
+}
+
+.info {
+  height: 78px;
+  background-color: rgb(49, 49, 57);
+  //width: 609px;
+  display: none;
+  align-items: center;
+
+  .info-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 60px;
+    padding-right: 33px;
+
+    h4 {
+      font-size: 18px;
+      font-family: museosanscyrl500, sans-serif;
+      color: rgb(255, 255, 255);
+      margin-bottom: 18px;
+    }
+
+    p {
+      font-size: 16px;
+      font-family: museosanscyrl300, sans-serif;
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  .info-right {
+    display: flex;
+    align-items: center;
+    padding-right: 38px;
+    padding-left: 33px;
+
+    .size, .size-two {
+      display: flex;
+      flex-direction: column;
+      margin-right: 22px;
+
+      h6 {
+        font-size: 16px;
+        font-family: museosanscyrl500, sans-serif;
+        color: rgb(255, 255, 255);
+        margin: 9px 0;
+      }
+
+      p {
+        font-size: 16px;
+        font-family: museosanscyrl300, sans-serif;
+        color: rgb(255, 255, 255);
+        margin: 9px 0;
+      }
+    }
+  }
+}
+
+.slick-current .info {
+  display: flex;
+}
+
+.slick-slide:not(.slick-center) img {
+  height: 326px;
+  margin-top: 107px;
+}
+
+.guarantees {
+  .container {
+    @include container;
+
+    h2 {
+      font-size: 40px;
+      font-family: Neumann, sans-serif;
+      color: rgb(236, 198, 107);
+      line-height: 1.5;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .guarantee {
+      padding: 62px 0;
+      display: flex;
+      justify-content: space-between;
+
+      .guarantee-block {
+        display: flex;
+        align-items: center;
+        padding: 20px 0 20px 20px;
+        background-color: #313139;
+        max-width: 588px;
+
+
+        img {
+          width: 50px;
+          height: 51px;
+          margin: 0 40px;
+        }
+
+        h4 {
+          font-size: 18px;
+          font-family: museosanscyrl500, sans-serif;
+          color: rgb(255, 255, 255);
+          margin-bottom: 15px;
+        }
+
+        p {
+          font-size: 18px;
+          font-family: MyriadproRegular, sans-serif;
+          color: rgb(255, 255, 255);
+          line-height: 1.278;
+          max-width: 357px;
+        }
+      }
+    }
+
+    .conditions {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 78px;
+
+      .condition {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        max-width: 276px;
+
+        svg {
+          margin-bottom: 27px;
+        }
+
+        h4 {
+          font-size: 18px;
+          font-family: museosanscyrl500, sans-serif;
+          color: rgb(255, 255, 255);
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: 18px;
+          font-family: museosanscyrl100, sans-serif;
+          color: rgb(255, 255, 255);
+          line-height: 1.278;
+          text-align: center;
+        }
+      }
+    }
+
+    .middle {
+      display: flex;
+      justify-content: center;
+
+      .pdf {
+        @include pdf;
+        width: 382px;
+        padding: 19px 0;
+        margin: 64px 0;
+      }
+    }
+  }
+}
+
+.consult {
+  padding-top: 57px;
+
+  .container {
+    @include container;
+
+    .ask {
+      display: flex;
+
+      img {
+        margin-right: 80px;
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          font-size: 40px;
+          font-family: Neumann, sans-serif;
+          color: rgb(236, 198, 107);
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        input {
+          @include input;
+          margin-top: 20px;
+          width: 407px;
+
+          &::placeholder {
+            font-size: 18px;
+            font-family: museosanscyrl300, sans-serif;
+            color: rgb(255, 255, 255);
+          }
+        }
+
+        .part-one {
+          display: flex;
+          flex-direction: column;
+
+          .input-one {
+            margin-top: 20px;
+            margin-bottom: 40px;
+          }
+
+          .error-input-one {
+            position: absolute;
+            margin-top: 95px;
+          }
+        }
+
+        .part-two {
+          .input-two {
+            margin-top: 20px;
+            margin-bottom: 40px;
+          }
+
+          .error-input-two {
+            position: absolute;
+            margin-top: -19px;
+          }
+        }
+
+        .error-input {
+          color: red;
+          font-size: 15px;
+          display: none;
+        }
+
+        button {
+          @include button;
+          width: 409px;
+          height: 60px;
+          padding: 19px 0;
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+
+        .privacy {
+          display: flex;
+
+          svg {
+            margin-right: 20px;
+          }
+
+          p {
+            font-size: 14px;
+            font-family: MyriadproRegular, sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 1.286;
+            width: 302px;
+
+            span {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      #thankYou {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+        font-family: Neumann, sans-serif;
+        color: rgb(236, 198, 107);
+      }
+    }
+  }
+}
+
+.register {
+  padding-top: 326px;
+  svg {
+    position: absolute;
+    top: -221px;
+    left: -38px;
+    z-index: -333;
+  }
+  .container {
+    @include container;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-size: 60px;
+      font-family: Neumann, sans-serif;
+      color: rgb(236, 198, 107);
+      margin: 0 auto 30px auto;
+      max-width: 383px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      font-family: MyriadproRegular, sans-serif;
+      color: rgb(255, 255, 255);
+      line-height: 1.278;
+      text-align: center;
+      max-width: 449px;
+      margin-bottom: 40px;
+    }
+
+    button {
+      @include button;
+      width: 306px;
+      padding: 18px 0;
+      margin-bottom: 160px;
+    }
+  }
+}
+
+footer {
+  border-top: 1px solid rgb(47, 47, 56);
+
+  .container {
+    @include container;
+    padding: 50px 0 114px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .address {
+      width: 300px;
+
+      p {
+        margin-bottom: 29px;
+        font-size: 18px;
+        font-family: museosanscyrl500, sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: left;
+      }
+
+      span {
+        font-size: 18px;
+        font-family: museosanscyrl500, sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        //width: 166px;
+      }
+    }
+
+    .footer-icons {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      svg {
+        margin-bottom: 57px;
+      }
+
+      .icons {
+        img:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+    }
+
+    .phone {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      width: 300px;
+
+      p {
+        font-size: 18px;
+        font-family: museosanscyrl700, sans-serif;
+        color: rgb(255, 255, 255);
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.loader {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 5;
+
+  .lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+
+    div {
+      transform-origin: 40px 40px;
+      animation: lds-spinner 1.2s linear infinite;
+
+      &:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 37px;
+        width: 6px;
+        height: 18px;
+        border-radius: 20%;
+        background: #ECC66BFF;
+      }
+
+      &:nth-child(1) {
+        transform: rotate(0deg);
+        animation-delay: -1.1s;
+      }
+
+      &:nth-child(2) {
+        transform: rotate(30deg);
+        animation-delay: -1s;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(60deg);
+        animation-delay: -0.9s;
+      }
+
+      &:nth-child(4) {
+        transform: rotate(90deg);
+        animation-delay: -0.8s;
+      }
+
+      &:nth-child(5) {
+        transform: rotate(120deg);
+        animation-delay: -0.7s;
+      }
+
+      &:nth-child(6) {
+        transform: rotate(150deg);
+        animation-delay: -0.6s;
+      }
+
+      &:nth-child(7) {
+        transform: rotate(180deg);
+        animation-delay: -0.5s;
+      }
+
+      &:nth-child(8) {
+        transform: rotate(210deg);
+        animation-delay: -0.4s;
+      }
+
+      &:nth-child(9) {
+        transform: rotate(240deg);
+        animation-delay: -0.3s;
+      }
+
+      &:nth-child(10) {
+        transform: rotate(270deg);
+        animation-delay: -0.2s;
+      }
+
+      &:nth-child(11) {
+        transform: rotate(300deg);
+        animation-delay: -0.1s;
+      }
+
+      &:nth-child(12) {
+        transform: rotate(330deg);
+        animation-delay: 0s;
+      }
+    }
+  }
+}
+
+.icons img:hover {
+  opacity: 90%;
+}
+
+#popup {
+  //box-sizing: border-box;
+  background-image: url("/images/back-popup.png");
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 52px 0 10px 0;
+  background-color: rgb(47, 47, 55);
+  width: 558px;
+  height: 482px;
+  position: relative;
+
+  h6 {
+    font-size: 18px;
+    font-family: MyriadproRegular, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.278;
+    text-align: center;
+    width: 404px;
+    margin-bottom: 30px;
+  }
+
+  input {
+    @include input;
+    box-sizing: border-box;
+    width: 306px;
+
+    &::placeholder {
+      font-size: 18px;
+      font-family: museosanscyrl300, sans-serif;
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  .popup-error-input {
+    color: red;
+    display: none;
+  }
+
+  .part-one {
+    display: flex;
+    flex-direction: column;
+
+    .input-one {
+      margin-bottom: 20px;
+    }
+
+    .popup-error-input-one {
+      position: absolute;
+      margin-top: 63px;
+    }
+  }
+
+  .part-two {
+    .input-two {
+      margin-bottom: 20px;
+    }
+
+    .popup-error-input-two {
+      position: absolute;
+      top: 296px;
+    }
+  }
+
+  .error-input {
+    color: red;
+    font-size: 15px;
+    display: none;
+  }
+
+  .privacy {
+    display: flex;
+
+    svg {
+      margin-right: 20px;
+    }
+
+    p {
+      font-size: 14px;
+      font-family: MyriadproRegular, sans-serif;
+      color: rgb(255, 255, 255);
+      line-height: 1.286;
+      width: 302px;
+
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  #popupThankYou {
+    display: none;
+    text-align: center;
+    font-size: 30px;
+    font-family: Neumann, sans-serif;
+    color: rgb(236, 198, 107);
+    padding: 52px 30px 10px 30px;
+  }
+}
+
+.mfp-close-btn-in .mfp-close {
+  color: white;
+}
+
+button {
+  @include button;
+  width: 306px;
+  padding: 19px 0;
+  margin-bottom: 20px;
+}
+
+@import "adaptive";
