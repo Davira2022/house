@@ -20,4 +20,4 @@ exports.watch = function () {
     watch('./styles/*.scss', series('sass'));
 };
 
-exports.build = series(sass);
+exports.build = series('sass');
