@@ -166,6 +166,7 @@ body {
       }
 
       .menu {
+        overflow: auto;
         display: none;
         position: fixed;
         width: 611px;
@@ -988,19 +989,21 @@ body {
 
 .register {
   padding-top: 326px;
-  svg {
-    position: absolute;
-    top: -221px;
-    left: -38px;
-    z-index: -333;
-  }
+
   .container {
     @include container;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    svg {
+      position: absolute;
+      top: -221px;
+      left: 0;
+      width: 100%;
 
+      z-index: -333;
+    }
     h2 {
       font-size: 60px;
       font-family: Neumann, sans-serif;

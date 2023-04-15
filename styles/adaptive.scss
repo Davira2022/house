@@ -1,8 +1,16 @@
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1275px) {
   .container {
     padding: 0 15px;
   }
-
+}
+@media screen and (max-width: 1240px) {
+  .steps {
+    .container {
+      .six-steps {
+        margin-left: 60px;
+      }
+    }
+  }
   .first section .container .arrow {
     left: 15px
   }
@@ -28,13 +36,11 @@
     width: 100%;
   }
 
-
   footer .container {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
-
 @media screen and (max-width: 1119px) {
   .projects {
     .container {
@@ -92,7 +98,6 @@
       }
     }
   }
-
   .consult .container .ask img {
     margin-right: 40px;
     width: 50%;
@@ -123,8 +128,7 @@
     }
   }
 }
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1001px) {
   .technologies {
     .container {
       h2 {
@@ -146,7 +150,7 @@
           display: block;
           position: absolute;
           top: 212px;
-          left: 119px;
+          left: 297px;
           cursor: pointer;
 
           &:hover g path {
@@ -162,7 +166,7 @@
           display: none;
           background-color: rgb(49, 49, 57);
           width: 400px;
-          left: 116px;
+          left: 307px;
           top: 686px;
           padding: 20px 17px;
           box-sizing: border-box;
@@ -177,7 +181,7 @@
           display: block;
           position: absolute;
           top: 451px;
-          left: 82px;
+          left: 259px;
           cursor: pointer;
 
           &:hover g path {
@@ -191,7 +195,7 @@
 
         .arrow-text {
           display: none;
-          left: 116px;
+          left: 307px;
           top: 686px;
           background-color: rgb(49, 49, 57);
           width: 400px;
@@ -208,7 +212,7 @@
           display: block;
           position: absolute;
           top: 587px;
-          left: 227px;
+          left: 411px;
           cursor: pointer;
 
           g path {
@@ -222,7 +226,7 @@
 
         .arrow-text {
           display: block;
-          left: 116px;
+          left: 307px;
           top: 686px;
           background-color: rgb(49, 49, 57);
           width: 400px;
@@ -239,7 +243,7 @@
           display: block;
           position: absolute;
           top: 403px;
-          left: 376px;
+          left: 564px;
           cursor: pointer;
 
           &:hover g path {
@@ -253,7 +257,7 @@
 
         .arrow-text {
           display: none;
-          left: 116px;
+          left: 307px;
           top: 686px;
           background-color: rgb(49, 49, 57);
           width: 400px;
@@ -271,7 +275,7 @@
           display: block;
           position: absolute;
           top: 267px;
-          left: 472px;
+          left: 636px;
           cursor: pointer;
 
           &:hover g path {
@@ -285,7 +289,7 @@
 
         .arrow-text {
           display: none;
-          left: 116px;
+          left: 307px;
           top: 686px;
           background-color: rgb(49, 49, 57);
           width: 400px;
@@ -360,6 +364,82 @@
       }
     }
   }
+  .guarantees {
+    .container {
+      .conditions {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+
+        .condition {
+
+          svg {
+            margin: 30px 0;
+          }
+        }
+
+        .condition-one {
+          order: 2;
+        }
+
+        .condition-two {
+          order: 1;
+        }
+
+        .condition-three {
+          order: 3;
+        }
+      }
+      }
+    }
+.consult {
+  padding-top: 46px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .ask {
+      .form {
+        h2 {
+          margin-bottom: 23px;
+        }
+
+        input {
+          box-sizing: border-box;
+        }
+
+        .part-one {
+          .input-one {
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+
+          .error-input-one {
+            position: absolute;
+            margin-top: 68px;
+          }
+        }
+
+        .part-two {
+          .input-two {
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+
+          .error-input-two {
+            position: absolute;
+            margin-top: -3px;
+          }
+        }
+      }
+
+      img {
+        display: none;
+      }
+    }
+  }
+
+
   footer {
     .container {
     max-width: 800px;
@@ -378,12 +458,438 @@
     }
   }
 }
+}
+@media screen and (max-width: 1001px) {
+  .technologies {
+    .container {
+      h2 {
+        text-align: center;
+      }
 
-@media screen and (max-width: 630px) {
+      img {
+        max-width: 800px;
+        margin-bottom: 134px;
+      }
 
-  .container {
-    max-width: 290px;
+      .big {
+        display: none;
+      }
+
+      .arrow-one {
+
+        .small {
+          display: block;
+          position: absolute;
+          top: 212px;
+          left: 297px;
+          cursor: pointer;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          background-color: rgb(49, 49, 57);
+          width: 400px;
+          left: 307px;
+          top: 686px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          p {
+            width: 100%;
+          }
+        }
+      }
+
+      .arrow-two {
+        .small {
+          display: block;
+          position: absolute;
+          top: 451px;
+          left: 259px;
+          cursor: pointer;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 307px;
+          top: 686px;
+          background-color: rgb(49, 49, 57);
+          width: 400px;
+          height: 119px;
+          padding: 20px 17px;
+
+          p {
+            width: 100%;
+          }
+        }
+      }
+
+      .arrow-three {
+        .small {
+          display: block;
+          position: absolute;
+          top: 587px;
+          left: 411px;
+          cursor: pointer;
+
+          g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: block;
+          left: 307px;
+          top: 686px;
+          background-color: rgb(49, 49, 57);
+          width: 400px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          p {
+            width: 100%;
+          }
+        }
+      }
+
+      .arrow-four {
+        .small {
+          display: block;
+          position: absolute;
+          top: 403px;
+          left: 564px;
+          cursor: pointer;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 307px;
+          top: 686px;
+          background-color: rgb(49, 49, 57);
+          width: 400px;
+          height: 119px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          p {
+            width: 100%;
+          }
+        }
+      }
+
+      .arrow-five {
+        .small {
+          display: block;
+          position: absolute;
+          top: 267px;
+          left: 636px;
+          cursor: pointer;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 307px;
+          top: 686px;
+          background-color: rgb(49, 49, 57);
+          width: 400px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          p {
+            width: 100%;
+          }
+        }
+      }
+
+      .square {
+        display: block;
+        background-color: rgb(49, 49, 57);
+        position: absolute;
+        bottom: 60px;
+        transform: rotate(45deg);
+        z-index: -222;
+        width: 58px;
+        height: 58px;
+      }
+    }
   }
+}
+@media screen and (max-width: 930px) {
+  .technologies {
+    .container {
+
+      .arrow-one {
+
+        .small {
+          left: 268px;
+        }
+
+        .arrow-text {
+          left: 265px;
+        }
+      }
+
+      .arrow-two {
+        .small {
+          left: 229px;
+        }
+
+        .arrow-text {
+          left: 265px;
+        }
+      }
+
+      .arrow-three {
+        .small {
+          left: 351px;
+        }
+
+        .arrow-text {
+          left: 265px;
+        }
+      }
+
+      .arrow-four {
+        .small {
+          left: 527px;
+        }
+
+        .arrow-text {
+          left: 265px;
+        }
+      }
+
+      .arrow-five {
+        .small {
+          left: 609px;
+        }
+
+        .arrow-text {
+          left: 265px;
+        }
+      }
+
+      .square {
+        display: block;
+        background-color: rgb(49, 49, 57);
+        position: absolute;
+        bottom: 60px;
+        transform: rotate(45deg);
+        z-index: -222;
+        width: 58px;
+        height: 58px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 873px) {
+  .technologies {
+    .container {
+
+      .arrow-one {
+
+        .small {
+          left: 241px;
+        }
+
+        .arrow-text {
+          left: 236px;
+        }
+      }
+
+      .arrow-two {
+        .small {
+          left: 197px;
+        }
+
+        .arrow-text {
+          left: 236px;
+        }
+      }
+
+      .arrow-three {
+        .small {
+          left: 324px;
+        }
+
+        .arrow-text {
+          left: 236px;
+        }
+      }
+
+      .arrow-four {
+        .small {
+          left: 496px;
+        }
+
+        .arrow-text {
+          left: 236px;
+        }
+      }
+
+      .arrow-five {
+        .small {
+          left: 564px;
+        }
+
+        .arrow-text {
+          left: 236px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 790px) {
+  .technologies {
+    .container {
+
+      .arrow-one {
+
+        .small {
+          left: 192px;
+        }
+
+        .arrow-text {
+          left: 191px;
+        }
+      }
+
+      .arrow-two {
+        .small {
+          left: 154px;
+        }
+
+        .arrow-text {
+          left: 191px;
+        }
+      }
+
+      .arrow-three {
+        .small {
+          left: 281px;
+        }
+
+        .arrow-text {
+          left: 191px;
+        }
+      }
+
+      .arrow-four {
+        .small {
+          left: 457px;
+        }
+
+        .arrow-text {
+          left: 191px;
+        }
+      }
+
+      .arrow-five {
+        .small {
+          left: 523px;
+        }
+
+        .arrow-text {
+          left: 191px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 702px) {
+  .technologies {
+    .container {
+
+      .arrow-one {
+
+        .small {
+          left: 151px;
+        }
+
+        .arrow-text {
+          left: 149px;
+        }
+      }
+
+      .arrow-two {
+        .small {
+          left: 116px;
+        }
+
+        .arrow-text {
+          left: 149px;
+        }
+      }
+
+      .arrow-three {
+        .small {
+          left: 242px;
+        }
+
+        .arrow-text {
+          left: 149px;
+        }
+      }
+
+      .arrow-four {
+        .small {
+          left: 416px;
+        }
+
+        .arrow-text {
+          left: 149px;
+        }
+      }
+
+      .arrow-five {
+        .small {
+          left: 481px;
+        }
+
+        .arrow-text {
+          left: 149px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 630px) {
   .first {
     padding-bottom: 310px;
 
@@ -392,12 +898,10 @@
 
       .container {
         padding: 0 15px;
-        max-width: 290px;
         justify-content: center;
         position: relative;
 
         .menu {
-          overflow: auto;
           width: 191px;
           height: 719px;
           align-self: start;
@@ -630,21 +1134,17 @@
       }
     }
   }
-
   .slick-current img {
     width: 290px;
     height: 320px;
   }
-
   .slick-dots {
     bottom: 21px;
   }
-
   .slick-slide:not(.slick-center) img {
     height: 320px;
     width: 290px;
   }
-
   .guarantees {
     .container {
       h2 {
@@ -696,7 +1196,6 @@
 
     }
   }
-
   .technologies {
     .container {
       h2 {
@@ -719,7 +1218,7 @@
           display: block;
           position: absolute;
           top: 210px;
-          left: 26px;
+          left: 100px;
 
           &:hover g path {
             fill: rgb(252, 237, 203);
@@ -732,13 +1231,12 @@
 
         .arrow-text {
           display: none;
-          top: 457px;
+          left: 169px;
+          top: 700px;
           background-color: rgb(49, 49, 57);
           width: 290px;
-
           padding: 20px 17px;
           box-sizing: border-box;
-
 
           h4 {
             font-size: 16px;
@@ -754,8 +1252,8 @@
         .small {
           display: block;
           position: absolute;
-          top: 300px;
-          left: 51px;
+          top: 445px;
+          left: 71px;
 
           &:hover g path {
             fill: rgb(252, 237, 203);
@@ -768,8 +1266,8 @@
 
         .arrow-text {
           display: none;
-          left: 15px;
-          top: 457px;
+          left: 169px;
+          top: 700px;
           background-color: rgb(49, 49, 57);
           width: 290px;
           height: 119px;
@@ -789,8 +1287,8 @@
         .small {
           display: block;
           position: absolute;
-          top: 375px;
-          left: 103px;
+          top: 591px;
+          left: 204px;
 
           g path {
             fill: rgb(252, 237, 203);
@@ -803,8 +1301,8 @@
 
         .arrow-text {
           display: block;
-          left: 15px;
-          top: 457px;
+          left: 169px;
+          top: 700px;
           background-color: rgb(49, 49, 57);
           width: 290px;
           padding: 20px 17px;
@@ -824,8 +1322,8 @@
         .small {
           display: block;
           position: absolute;
-          top: 299px;
-          left: 183px;
+          top: 400px;
+          left: 388px;
 
           &:hover g path {
             fill: rgb(252, 237, 203);
@@ -838,8 +1336,8 @@
 
         .arrow-text {
           display: none;
-          left: 15px;
-          top: 457px;
+          left: 169px;
+          top: 700px;
           background-color: rgb(49, 49, 57);
           width: 290px;
           height: 119px;
@@ -860,8 +1358,8 @@
         .small {
           display: block;
           position: absolute;
-          top: 215px;
-          left: 211px;
+          top: 252px;
+          left: 453px;
 
           &:hover g path {
             fill: rgb(252, 237, 203);
@@ -874,8 +1372,8 @@
 
         .arrow-text {
           display: none;
-          left: 15px;
-          top: 457px;
+          left: 169px;
+          top: 700px;
           background-color: rgb(49, 49, 57);
           width: 290px;
           padding: 20px 17px;
@@ -927,6 +1425,2647 @@
     margin-top: 94px;
     padding-top: 0;
 
+    .container {
+      h2 {
+        font-size: 30px;
+      }
+
+      svg {
+        display: none;
+      }
+
+      p {
+        font-size: 16px;
+        margin-bottom: 36px;
+      }
+
+      button {
+        margin-bottom: 90px;
+      }
+    }
+  }
+
+  .consult {
+    padding-top: 46px;
+
+    .container {
+
+      .ask {
+        .form {
+          h2 {
+            font-size: 30px;
+            margin-bottom: 23px;
+          }
+
+          input {
+            //margin: 10px 0;
+            padding: 17px 0 17px 22px;
+            width: 290px;
+            box-sizing: border-box;
+            font-size: 16px;
+
+            &::placeholder {
+              font-size: 16px;
+            }
+          }
+
+          .part-one {
+            .input-one {
+              margin-top: 10px;
+              margin-bottom: 10px;
+            }
+
+            .error-input-one {
+              position: absolute;
+              margin-top: 68px;
+            }
+          }
+
+          .part-two {
+            .input-two {
+              margin-top: 10px;
+              margin-bottom: 10px;
+            }
+
+            .error-input-two {
+              position: absolute;
+              margin-top: -3px;
+            }
+          }
+
+          .error-input {
+            font-size: 14px;
+          }
+
+          button {
+            border-radius: 25px;
+            font-size: 16px;
+            width: 290px;
+          }
+
+          .privacy {
+            width: 290px;
+
+          }
+        }
+
+        img {
+          display: none;
+        }
+
+        #thankYou {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  footer {
+    .container {
+      padding-bottom: 84px;
+      flex-direction: column;
+
+      .footer-icons {
+        margin-bottom: 48px;
+        order: 1;
+
+        svg {
+          margin-bottom: 45px;
+        }
+      }
+
+      .address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        order: 2;
+
+        p {
+
+          margin-bottom: 16px;
+        }
+
+        span {
+          margin-bottom: 55px;
+        }
+      }
+
+      .phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: 3;
+
+        p {
+          margin-bottom: 13px;
+        }
+      }
+    }
+  }
+
+  #popup {
+    padding: 51px 0 20px 0;
+    width: 290px;
+    height: 398px;
+    position: relative;
+
+    h6 {
+      font-size: 14px;
+      font-family: museosanscyrl500, sans-serif;
+      width: 290px;
+      margin-bottom: 22px;
+    }
+
+    input {
+      padding: 19px 0 17px 22px;
+      border-radius: 23.5px;
+      border-color: rgb(255, 255, 255);
+      width: 272px;
+      font-size: 14px;
+
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+
+    .part-one {
+
+      .input-one {
+        margin-bottom: 20px;
+      }
+
+      .popup-error-input-one {
+        top: 118px;
+        left: 35px;
+      }
+    }
+
+    .part-two {
+      .input-two {
+        margin-bottom: 40px;
+        font-size: 14px;
+      }
+
+      .popup-error-input-two {
+        position: absolute;
+        top: 261px;
+        left: 35px;
+      }
+    }
+
+    .error-input {
+      font-size: 14px;
+    }
+
+    .privacy {
+      svg {
+        margin-right: 14px;
+      }
+
+      p {
+        font-size: 12px;
+        width: 202px;
+        font-family: museosanscyrl300, sans-serif;
+      }
+    }
+
+    #popupThankYou {
+      font-size: 20px;
+      padding: 20px;
+    }
+  }
+
+  button {
+    padding: 19px 0;
+    margin-bottom: 20px;
+    width: 272px;
+    //height: 47px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 584px) {
+  .technologies {
+    .container {
+      h2 {
+        font-size: 30px;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        margin-bottom: 134px;
+      }
+
+      .big {
+        display: none;
+      }
+
+      .arrow-one {
+
+        .small {
+          display: block;
+          position: absolute;
+          top: 210px;
+          left: 86px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 151px;
+          top: 673px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-two {
+        .small {
+          display: block;
+          position: absolute;
+          top: 423px;
+          left: 60px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 151px;
+          top: 673px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          height: 119px;
+          padding: 20px 17px;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-three {
+        .small {
+          display: block;
+          position: absolute;
+          top: 560px;
+          left: 183px;
+
+          g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: block;
+          left: 151px;
+          top: 673px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-four {
+        .small {
+          display: block;
+          position: absolute;
+          top: 380px;
+          left: 356px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 151px;
+          top: 673px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          height: 119px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-five {
+        .small {
+          display: block;
+          position: absolute;
+          top: 236px;
+          left: 415px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 151px;
+          top: 673px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .square {
+        display: block;
+        background-color: rgb(49, 49, 57);
+        position: absolute;
+        bottom: 60px;
+        transform: rotate(45deg);
+        z-index: -222;
+        width: 58px;
+        height: 58px;
+      }
+    }
+  }
+  .guarantees .container .guarantee .guarantee-block {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 542px) {
+  .technologies {
+    .container {
+      h2 {
+        font-size: 30px;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        margin-bottom: 134px;
+      }
+
+      .big {
+        display: none;
+      }
+
+      .arrow-one {
+
+        .small {
+          display: block;
+          position: absolute;
+          top: 186px;
+          left: 86px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 128px;
+          top: 620px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-two {
+        .small {
+          display: block;
+          position: absolute;
+          top: 396px;
+          left: 60px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 128px;
+          top: 620px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          height: 119px;
+          padding: 20px 17px;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-three {
+        .small {
+          display: block;
+          position: absolute;
+          top: 517px;
+          left: 183px;
+
+          g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: block;
+          left: 128px;
+          top: 620px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-four {
+        .small {
+          display: block;
+          position: absolute;
+          top: 363px;
+          left: 325px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 128px;
+          top: 620px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          height: 119px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-five {
+        .small {
+          display: block;
+          position: absolute;
+          top: 221px;
+          left: 387px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 128px;
+          top: 620px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .square {
+        display: block;
+        background-color: rgb(49, 49, 57);
+        position: absolute;
+        bottom: 60px;
+        transform: rotate(45deg);
+        z-index: -222;
+        width: 58px;
+        height: 58px;
+      }
+    }
+  }
+  .steps {
+    .container {
+      h2 {
+        font-size: 30px;
+        padding: 83px 0 101px 0;
+      }
+
+      .six-steps {
+        margin-left: 0;
+display: flex;
+        flex-direction: column;
+        align-items: center;
+        .step {
+          .icon {
+            margin-right: 19px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 508px) {
+  .technologies {
+    .container {
+      h2 {
+        font-size: 30px;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        margin-bottom: 134px;
+      }
+
+      .big {
+        display: none;
+      }
+
+      .arrow-one {
+
+        .small {
+          display: block;
+          position: absolute;
+          top: 176px;
+          left: 86px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 111px;
+          top: 588px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-two {
+        .small {
+          display: block;
+          position: absolute;
+          top: 376px;
+          left: 52px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 111px;
+          top: 588px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          height: 119px;
+          padding: 20px 17px;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-three {
+        .small {
+          display: block;
+          position: absolute;
+          top: 479px;
+          left: 161px;
+
+          g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: block;
+          left: 111px;
+          top: 588px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-four {
+        .small {
+          display: block;
+          position: absolute;
+          top: 344px;
+          left: 303px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 111px;
+          top: 588px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          height: 119px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-five {
+        .small {
+          display: block;
+          position: absolute;
+          top: 210px;
+          left: 355px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 111px;
+          top: 588px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .square {
+        display: block;
+        background-color: rgb(49, 49, 57);
+        position: absolute;
+        bottom: 60px;
+        transform: rotate(45deg);
+        z-index: -222;
+        width: 58px;
+        height: 58px;
+      }
+    }
+  }
+  .guarantees .container .guarantee .guarantee-block {
+    padding: 10px;
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 487px) {
+  .technologies {
+    .container {
+      h2 {
+        font-size: 30px;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        margin-bottom: 134px;
+      }
+
+      .big {
+        display: none;
+      }
+
+      .arrow-one {
+
+        .small {
+          display: block;
+          position: absolute;
+          top: 176px;
+          left: 77px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 99px;
+          top: 565px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-two {
+        .small {
+          display: block;
+          position: absolute;
+          top: 362px;
+          left: 50px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 99px;
+          top: 565px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          height: 119px;
+          padding: 20px 17px;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-three {
+        .small {
+          display: block;
+          position: absolute;
+          top: 475px;
+          left: 147px;
+
+          g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: block;
+          left: 99px;
+          top: 565px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-four {
+        .small {
+          display: block;
+          position: absolute;
+          top: 327px;
+          left: 288px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 99px;
+          top: 565px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          height: 119px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-five {
+        .small {
+          display: block;
+          position: absolute;
+          top: 210px;
+          left: 335px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 99px;
+          top: 565px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .square {
+        display: block;
+        background-color: rgb(49, 49, 57);
+        position: absolute;
+        bottom: 60px;
+        transform: rotate(45deg);
+        z-index: -222;
+        width: 58px;
+        height: 58px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 469px) {
+  .technologies {
+    .container {
+      h2 {
+        font-size: 30px;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        margin-bottom: 134px;
+      }
+
+      .big {
+        display: none;
+      }
+
+      .arrow-one {
+
+        .small {
+          display: block;
+          position: absolute;
+          top: 168px;
+          left: 77px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 89px;
+          top: 542px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-two {
+        .small {
+          display: block;
+          position: absolute;
+          top: 362px;
+          left: 50px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 89px;
+          top: 542px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          height: 119px;
+          padding: 20px 17px;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-three {
+        .small {
+          display: block;
+          position: absolute;
+          top: 475px;
+          left: 147px;
+
+          g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: block;
+          left: 89px;
+          top: 542px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-four {
+        .small {
+          display: block;
+          position: absolute;
+          top: 327px;
+          left: 288px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 99px;
+          top: 565px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          height: 119px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-five {
+        .small {
+          display: block;
+          position: absolute;
+          top: 210px;
+          left: 335px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 89px;
+          top: 542px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .square {
+        display: block;
+        background-color: rgb(49, 49, 57);
+        position: absolute;
+        bottom: 60px;
+        transform: rotate(45deg);
+        z-index: -222;
+        width: 58px;
+        height: 58px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 438px) {
+  .technologies {
+    .container {
+      h2 {
+        font-size: 30px;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        margin-bottom: 134px;
+      }
+
+      .big {
+        display: none;
+      }
+
+      .arrow-one {
+
+        .small {
+          display: block;
+          position: absolute;
+          top: 154px;
+          left: 77px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 77px;
+          top: 516px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-two {
+        .small {
+          display: block;
+          position: absolute;
+          top: 332px;
+          left: 40px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 77px;
+          top: 516px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          height: 119px;
+          padding: 20px 17px;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-three {
+        .small {
+          display: block;
+          position: absolute;
+          top: 430px;
+          left: 134px;
+
+          g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: block;
+          left: 77px;
+          top: 516px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-four {
+        .small {
+          display: block;
+          position: absolute;
+          top: 305px;
+          left: 254px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 77px;
+          top: 516px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          height: 119px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-five {
+        .small {
+          display: block;
+          position: absolute;
+          top: 195px;
+          left: 301px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 77px;
+          top: 516px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .square {
+        display: block;
+        background-color: rgb(49, 49, 57);
+        position: absolute;
+        bottom: 60px;
+        transform: rotate(45deg);
+        z-index: -222;
+        width: 58px;
+        height: 58px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 428px) {
+  .technologies {
+    .container {
+      h2 {
+        font-size: 30px;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        margin-bottom: 134px;
+      }
+
+      .big {
+        display: none;
+      }
+
+      .arrow-one {
+
+        .small {
+          display: block;
+          position: absolute;
+          top: 202px;
+          left: 67px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 77px;
+          top: 554px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-two {
+        .small {
+          display: block;
+          position: absolute;
+          top: 358px;
+          left: 40px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 77px;
+          top: 554px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          height: 119px;
+          padding: 20px 17px;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-three {
+        .small {
+          display: block;
+          position: absolute;
+          top: 464px;
+          left: 134px;
+
+          g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: block;
+          left: 77px;
+          top: 554px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-four {
+        .small {
+          display: block;
+          position: absolute;
+          top: 337px;
+          left: 243px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 77px;
+          top: 554px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          height: 119px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-five {
+        .small {
+          display: block;
+          position: absolute;
+          top: 237px;
+          left: 294px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 77px;
+          top: 554px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .square {
+        display: block;
+        background-color: rgb(49, 49, 57);
+        position: absolute;
+        bottom: 60px;
+        transform: rotate(45deg);
+        z-index: -222;
+        width: 58px;
+        height: 58px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 404px) {
+  .technologies {
+    .container {
+      h2 {
+        font-size: 30px;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        margin-bottom: 134px;
+      }
+
+      .big {
+        display: none;
+      }
+
+      .arrow-one {
+
+        .small {
+          display: block;
+          position: absolute;
+          top: 202px;
+          left: 67px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 61px;
+          top: 533px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-two {
+        .small {
+          display: block;
+          position: absolute;
+          top: 358px;
+          left: 40px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 61px;
+          top: 533px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          height: 119px;
+          padding: 20px 17px;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-three {
+        .small {
+          display: block;
+          position: absolute;
+          top: 464px;
+          left: 134px;
+
+          g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: block;
+          left: 61px;
+          top: 533px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-four {
+        .small {
+          display: block;
+          position: absolute;
+          top: 337px;
+          left: 243px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 61px;
+          top: 533px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          height: 119px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-five {
+        .small {
+          display: block;
+          position: absolute;
+          top: 237px;
+          left: 294px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 61px;
+          top: 533px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .square {
+        display: block;
+        background-color: rgb(49, 49, 57);
+        position: absolute;
+        bottom: 60px;
+        transform: rotate(45deg);
+        z-index: -222;
+        width: 58px;
+        height: 58px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 376px) {
+  .technologies {
+    .container {
+      h2 {
+        font-size: 30px;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        margin-bottom: 134px;
+      }
+
+      .big {
+        display: none;
+      }
+
+      .arrow-one {
+
+        .small {
+          display: block;
+          position: absolute;
+          top: 193px;
+          left: 53px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 44px;
+          top: 505px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-two {
+        .small {
+          display: block;
+          position: absolute;
+          top: 344px;
+          left: 29px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 44px;
+          top: 505px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          height: 119px;
+          padding: 20px 17px;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-three {
+        .small {
+          display: block;
+          position: absolute;
+          top: 418px;
+          left: 107px;
+
+          g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: block;
+          left: 44px;
+          top: 505px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-four {
+        .small {
+          display: block;
+          position: absolute;
+          top: 311px;
+          left: 211px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 44px;
+          top: 505px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          height: 119px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-five {
+        .small {
+          display: block;
+          position: absolute;
+          top: 222px;
+          left: 251px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 44px;
+          top: 505px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .square {
+        display: block;
+        background-color: rgb(49, 49, 57);
+        position: absolute;
+        bottom: 60px;
+        transform: rotate(45deg);
+        z-index: -222;
+        width: 58px;
+        height: 58px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 321px) {
+  .first {
+    padding-bottom: 310px;
+
+    .header {
+      padding: 30px 0;
+
+      .container {
+        padding: 0 15px;
+        max-width: 290px;
+        justify-content: center;
+        position: relative;
+
+        .menu {
+          width: 191px;
+          height: 719px;
+          align-self: start;
+
+          .container-menu {
+            min-width: 156px;
+
+            .phone-small {
+              max-width: 290px;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+
+              p {
+                font-size: 16px;
+                margin-top: 51px;
+                font-family: museosanscyrl700, sans-serif;
+                color: rgb(255, 255, 255);
+              }
+
+              a {
+                img {
+                  position: absolute;
+                  left: -15px;
+                  bottom: -52px;
+                }
+              }
+            }
+
+            h2 {
+              margin-top: 56px;
+              font-size: 35px;
+            }
+
+            ul {
+              padding: 60px 0;
+            }
+          }
+        }
+
+        .burger {
+          position: absolute;
+          left: 15px;
+
+          img {
+            width: 40px;
+          }
+        }
+
+        .phone {
+          display: none;
+        }
+      }
+    }
+
+    section {
+      padding-top: 147px;
+
+      .container {
+        max-width: 290px;
+
+        .arrow {
+          display: none;
+        }
+
+        .icons {
+          display: none;
+        }
+
+        h1 {
+          font-size: 26px;
+          margin-bottom: 15px;
+        }
+
+        h3 {
+          font-size: 14px;
+          margin-bottom: 27px;
+        }
+
+        button {
+          width: 228px;
+          font-size: 16px;
+          border: none;
+          padding: 16px 0 15px 0;
+        }
+      }
+    }
+  }
+  .projects {
+    .container {
+      h2 {
+        font-size: 30px;
+        text-align: left;
+        margin-bottom: 44px;
+      }
+
+      .project {
+        flex-direction: column;
+        position: relative;
+
+        .carousel {
+          order: 1;
+
+          a {
+            img {
+              width: 100%;
+            }
+          }
+
+          .smallImages {
+            margin-bottom: 30px;
+            margin-top: 10px;
+
+            img {
+              width: 89px;
+
+              &:not(:nth-child(3)) {
+                margin-right: 14px;
+              }
+            }
+          }
+        }
+
+        .project-text {
+          order: 2;
+
+          h3 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 18px;
+            //order: 1;
+            margin-bottom: 27px;
+          }
+
+          p {
+            font-family: museosanscyrl300, sans-serif;
+            font-size: 14px;
+          }
+
+          .circles {
+            margin: 40px 0;
+
+            img {
+              height: 85px;
+              width: 85px;
+
+            }
+          }
+
+          .consult {
+            width: 290px;
+            //height: 50px;
+            font-size: 16px;
+            border-radius: 25px;
+            padding: 14px 0;
+          }
+
+          div {
+
+            a.pdf {
+              width: 290px;
+              font-size: 15px;
+              border-radius: 25px;
+              padding: 14px 0;
+
+              &:not(:last-child) {
+                margin-bottom: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .info {
+
+    height: 119px;
+    width: 290px;
+
+    .line {
+
+    }
+
+    .info-left {
+
+      padding: 15px;
+
+      h4 {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 14px;
+        width: 100px;
+      }
+    }
+
+    .info-right {
+      padding: 15px;
+
+      .size, .size-two {
+        margin-right: 0;
+
+        h6 {
+          display: none;
+        }
+
+        p {
+          font-family: museosanscyrl100, sans-serif;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .history {
+    margin-bottom: 60px;
+
+    .container {
+      h2 {
+        font-size: 30px;
+        margin-bottom: 40px;
+      }
+
+      .center {
+        .photo {
+          height: 320px;
+        }
+      }
+    }
+  }
+  .slick-current img {
+    width: 290px;
+    height: 320px;
+  }
+  .slick-dots {
+    bottom: 21px;
+  }
+  .slick-slide:not(.slick-center) img {
+    height: 320px;
+    width: 290px;
+  }
+  .guarantees {
+    .container {
+      h2 {
+        font-size: 30px;
+        margin: 30px 0;
+      }
+
+      .conditions {
+        flex-direction: column;
+        padding: 0;
+
+        .condition {
+
+          svg {
+            margin: 30px 0;
+          }
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+
+        .condition-one {
+          order: 2;
+        }
+
+        .condition-two {
+          order: 1;
+        }
+
+        .condition-three {
+          order: 3;
+        }
+      }
+      .middle {
+        .pdf {
+          border-radius: 25px;
+          font-size: 14px;
+          width: 290px;
+          margin: 54px 0;
+        }
+      }
+
+    }
+  }
+  .technologies {
+    .container {
+      h2 {
+        font-size: 30px;
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        margin-bottom: 134px;
+      }
+
+      .big {
+        display: none;
+      }
+
+      .arrow-one {
+
+        .small {
+          display: block;
+          position: absolute;
+          top: 210px;
+          left: 26px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 15px;
+          top: 450px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-two {
+        .small {
+          display: block;
+          position: absolute;
+          top: 302px;
+          left: 56px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 15px;
+          top: 450px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          height: 119px;
+          padding: 20px 17px;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-three {
+        .small {
+          display: block;
+          position: absolute;
+          top: 374px;
+          left: 97px;
+
+          g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: block;
+          left: 15px;
+          top: 450px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-four {
+        .small {
+          display: block;
+          position: absolute;
+          top: 292px;
+          left: 189px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 15px;
+          top: 450px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          height: 119px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .arrow-five {
+        .small {
+          display: block;
+          position: absolute;
+          top: 209px;
+          left: 205px;
+
+          &:hover g path {
+            fill: rgb(252, 237, 203);
+          }
+
+          &:hover path {
+            stroke: rgb(252, 237, 203);
+          }
+        }
+
+        .arrow-text {
+          display: none;
+          left: 15px;
+          top: 450px;
+          background-color: rgb(49, 49, 57);
+          width: 290px;
+          padding: 20px 17px;
+          box-sizing: border-box;
+
+          h4 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .square {
+        display: block;
+        background-color: rgb(49, 49, 57);
+        position: absolute;
+        bottom: 60px;
+        transform: rotate(45deg);
+        z-index: -222;
+        width: 58px;
+        height: 58px;
+      }
+    }
+  }
+  .steps {
+    .container {
+      h2 {
+        font-size: 30px;
+        padding: 83px 0 101px 0;
+      }
+
+      .six-steps {
+        margin-left: 0;
+
+        .step {
+          .icon {
+            margin-right: 19px;
+          }
+        }
+      }
+    }
+  }
+  .register {
+    margin-top: 94px;
+    padding-top: 0;
     .container {
       h2 {
         font-size: 30px;

@@ -56,12 +56,6 @@ $(document).ready(function () {
         let popupThankYou = $('#popupThankYou');
         let popupHasError = false;
 
-
-        // $('.popup-error-input').hide();
-        // popupName.css('border-color', '#821328');
-        // popupPhone.css('border-color', '#821328');
-
-
         if (!popupName.val()) {
             popupName.css('border-color', 'red');
             popupName.next().show();
@@ -148,7 +142,7 @@ $('.center').slick({
     centerPadding: '100px',
     responsive: [
         {
-            breakpoint: 1195,
+            breakpoint: 768,
             settings: {
                 arrows: false,
                 centerMode: true,
@@ -157,7 +151,7 @@ $('.center').slick({
             }
         },
         {
-            breakpoint: 1000,
+            breakpoint: 480,
             settings: {
                 arrows: false,
                 centerMode: true,
