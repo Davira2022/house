@@ -112,7 +112,7 @@ body {
 }
 
 .first {
-  background-image: url("/images/back.png");
+  background-image: url("../images/back.png");
   background-size: cover;
   background-position: top;
   //height: 811px;
@@ -673,7 +673,7 @@ body {
 }
 
 .slick-prev::before {
-  content: url("/images/arrow-left.png");
+  content: url("../images/arrow-left.png");
 }
 
 .slick-next {
@@ -681,7 +681,7 @@ body {
 }
 
 .slick-next::before {
-  content: url("/images/arrow-right.png");
+  content: url("../images/arrow-right.png");
 }
 
 .slick-dots {
@@ -689,13 +689,13 @@ body {
 }
 
 .slick-dots li button {
-  background-image: url("/images/dot.png");
+  background-image: url("../images/dot.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .slick-dots li.slick-active button:before {
-  background-image: url("/images/dot-active.png");
+  background-image: url("../images/dot-active.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1200,7 +1200,7 @@ footer {
 
 #popup {
   //box-sizing: border-box;
-  background-image: url("/images/back-popup.png");
+  background-image: url("../images/back-popup.png");
   background-size: cover;
   background-position: center;
   margin: 0 auto;
