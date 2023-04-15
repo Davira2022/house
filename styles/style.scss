@@ -11,44 +11,44 @@
 
 @font-face {
   font-family: Neumann;
-  src: url("../fonts/td-neumann.otf");
+  src: url("../../fonts/td-neumann.otf");
 }
 
 @font-face {
   font-family: MyriadproRegular;
-  src: url("../fonts/MYRIADPRO-REGULAR.OTF");
+  src: url("../../fonts/MYRIADPRO-REGULAR.OTF");
 }
 
 @font-face {
   font-family: museosanscyrl100;
-  src: url("../fonts/museosanscyrl-100.eot");
-  src: url("../fonts/museosanscyrl-100.ttf");
-  src: url("../fonts/museosanscyrl-100.woff");
-  src: url("../fonts/museosanscyrl-100.woff2")
+  src: url("../../fonts/museosanscyrl-100.eot");
+  src: url("../../fonts/museosanscyrl-100.ttf");
+  src: url("../../fonts/museosanscyrl-100.woff");
+  src: url("../../fonts/museosanscyrl-100.woff2")
 }
 
 @font-face {
   font-family: museosanscyrl300;
-  src: url("../fonts/museosanscyrl-300.eot");
-  src: url("../fonts/museosanscyrl-300.ttf");
-  src: url("../fonts/museosanscyrl-300.woff");
-  src: url("../fonts/museosanscyrl-300.woff2")
+  src: url("../../fonts/museosanscyrl-300.eot");
+  src: url("../../fonts/museosanscyrl-300.ttf");
+  src: url("../../fonts/museosanscyrl-300.woff");
+  src: url("../../fonts/museosanscyrl-300.woff2")
 }
 
 @font-face {
   font-family: museosanscyrl500;
-  src: url("../fonts/museosanscyrl-500.eot");
-  src: url("../fonts/museosanscyrl-500.ttf");
-  src: url("../fonts/museosanscyrl-500.woff");
-  src: url("../fonts/museosanscyrl-500.woff2")
+  src: url("../../fonts/museosanscyrl-500.eot");
+  src: url("../../fonts/museosanscyrl-500.ttf");
+  src: url("../../fonts/museosanscyrl-500.woff");
+  src: url("../../fonts/museosanscyrl-500.woff2")
 }
 
 @font-face {
   font-family: museosanscyrl700;
-  src: url("../fonts/museosanscyrl-700.eot");
-  src: url("../fonts/museosanscyrl-700.ttf");
-  src: url("../fonts/museosanscyrl-700.woff");
-  src: url("../fonts/museosanscyrl-700.woff2")
+  src: url("../../fonts/museosanscyrl-700.eot");
+  src: url("../../fonts/museosanscyrl-700.ttf");
+  src: url("../../fonts/museosanscyrl-700.woff");
+  src: url("../../fonts/museosanscyrl-700.woff2")
 }
 
 @mixin button() {
@@ -112,7 +112,7 @@ body {
 }
 
 .first {
-  background-image: url("../images/back.png");
+  background-image: url("../../images/back.png");
   background-size: cover;
   background-position: top;
   //height: 811px;
@@ -673,7 +673,7 @@ body {
 }
 
 .slick-prev::before {
-  content: url("../images/arrow-left.png");
+  content: url("../../images/arrow-left.png");
 }
 
 .slick-next {
@@ -681,7 +681,7 @@ body {
 }
 
 .slick-next::before {
-  content: url("../images/arrow-right.png");
+  content: url("../../images/arrow-right.png");
 }
 
 .slick-dots {
@@ -689,13 +689,13 @@ body {
 }
 
 .slick-dots li button {
-  background-image: url("../images/dot.png");
+  background-image: url("../../images/dot.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .slick-dots li.slick-active button:before {
-  background-image: url("../images/dot-active.png");
+  background-image: url("../../images/dot-active.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1200,7 +1200,7 @@ footer {
 
 #popup {
   //box-sizing: border-box;
-  background-image: url("../images/back-popup.png");
+  background-image: url("../../images/back-popup.png");
   background-size: cover;
   background-position: center;
   margin: 0 auto;
